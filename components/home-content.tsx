@@ -172,18 +172,18 @@ export function HomeContent() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
             {[
-              { name: "React.js", logo: "/placeholder.svg?height=80&width=80" },
-              { name: "Next.js", logo: "/placeholder.svg?height=80&width=80" },
-              { name: "Flutter", logo: "/placeholder.svg?height=80&width=80" },
-              { name: "Spring Boot", logo: "/placeholder.svg?height=80&width=80" },
-              { name: "Django", logo: "/placeholder.svg?height=80&width=80" },
-              { name: "Node.js", logo: "/placeholder.svg?height=80&width=80" },
-              { name: "MySQL", logo: "/placeholder.svg?height=80&width=80" },
-              { name: "Supabase", logo: "/placeholder.svg?height=80&width=80" },
-              { name: "WordPress", logo: "/placeholder.svg?height=80&width=80" },
-              { name: "Tailwind CSS", logo: "/placeholder.svg?height=80&width=80" },
-              { name: "TypeScript", logo: "/placeholder.svg?height=80&width=80" },
-              { name: "Firebase", logo: "/placeholder.svg?height=80&width=80" },
+              { name: "React.js", logo: "/react.png" },
+              { name: "Next.js", logo: "/next.png" },
+              { name: "Flutter", logo: "/flutter.png" },
+              { name: "Spring Boot", logo: "/spring-boot.png" },
+              { name: "Django", logo: "/django.png" },
+              { name: "Node.js", logo: "/node.png" },
+              { name: "MySQL", logo: "/mysql.png" },
+              { name: "Supabase", logo: "/supabase.png" },
+              { name: "WordPress", logo: "/wp.png" },
+              { name: "Tailwind CSS", logo: "/tailwind.png" },
+              { name: "TypeScript", logo: "/ts.png" },
+              { name: "Python", logo: "/py.png" },
             ].map((tech, index) => (
               <div
                 key={index}
