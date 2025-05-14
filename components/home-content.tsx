@@ -80,9 +80,11 @@ export function HomeContent() {
         <div className="flex items-center gap-4">
           <LanguageSwitcher />
           <ThemeToggle />
-          <Button>
-            {t("nav.letsTalk")}
-            <MoveRight className="ml-2 h-4 w-4" />
+          <Button          >
+            <a href="/#contact" className="flex items-center">
+              {t("nav.letsTalk")}
+              <MoveRight className="ml-2 h-4 w-4" />
+            </a>
           </Button>
         </div>
       </header>
@@ -103,11 +105,15 @@ export function HomeContent() {
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">{t("hero.subtitle")}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg">
-              {t("general.viewWork")}
-              <MoveRight className="ml-2 h-4 w-4" />
+              <a href="/#projects" className="flex items-center">
+                {t("general.viewWork")}
+                <MoveRight className="ml-2 h-4 w-4" />
+              </a>
             </Button>
             <Button size="lg" variant="outline">
-              {t("general.getInTouch")}
+              <a href="/#contact" className="flex items-center">
+                {t("general.getInTouch")}
+              </a>
             </Button>
           </div>
         </div>
@@ -157,7 +163,11 @@ export function HomeContent() {
       <section id="technologies" className="bg-muted py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("technologies.title")}</h2>
+            <div className="flex justify-center items-center gap-4">
+              <Code className="h-8 w-8 mb-3 text-primary" />
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("technologies.title")}</h2>
+              <Code className="h-8 w-8 mb-3 text-primary" />
+            </div>
             <p className="text-lg text-muted-foreground">{t("technologies.subtitle")}</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
